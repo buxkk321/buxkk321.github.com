@@ -23,6 +23,7 @@ $('#xxx').JsonEditor(input_data);
 ```
 
 显示效果
+
 --标题1
 
 ----name:abc
@@ -46,13 +47,21 @@ $('#xxx').JsonEditor(input_data);
 option.node_title_key='name'
 
 那么最后的显示效果为:
+
 --abc
+
 ----name:abc
+
 ----data:1111
+
 --aaa
+
 ----name:aaa
+
 ----data:
+
 ------标题3:333
+
 ------标题4:444
 
 ### option.node_child_key
@@ -62,9 +71,14 @@ option.node_title_key='name'
 option.node_child_key='data'
 
 那么最后的显示效果为:
+
 --abc
+
 ----1111
+
 --aaa
+
 ----标题3:333
+
 ----标题4:444
  
