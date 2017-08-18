@@ -1,7 +1,7 @@
  
 ## 配置项
-* node_title_key
-* node_child_key
+* node_title_key  (Default:'')
+* node_child_key  (Default:'')
 
 ### 例1:
 
@@ -51,6 +51,21 @@ option.node_title_key='name'
 ------标题4:444  
 
 * option.node_child_key
+
+### 例2.2:
+更改配置:   
+option.node_title_key='abc'
+
+那么最后的显示效果为:    
+--''(空字符串)  
+----name:abc  
+----data:1111  
+--''(空字符串)  
+----name:aaa  
+----data:  
+------标题3:333  
+------标题4:444  
+
 
 ### 例3:
 更改配置:    
