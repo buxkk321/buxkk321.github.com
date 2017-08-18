@@ -35,7 +35,7 @@ $('#xxx').JsonEditor(input_data);
 ## 配置项
 * option.node_title_key
 
-如果输入如下配置:   
+* 例1:如果输入如下配置:   
 option.node_title_key='name'
 
 那么最后的显示效果为:    
