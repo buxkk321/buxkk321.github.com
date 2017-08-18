@@ -22,7 +22,7 @@ var input_data={
 $('#xxx').JsonEditor(input_data);
 ```
 
-默认显示效果  
+默认显示效果    
 --标题1  
 ----name:abc  
 ----data:1111  
@@ -38,7 +38,7 @@ $('#xxx').JsonEditor(input_data);
 如果输入如下配置:   
 option.node_title_key='name'
 
-那么最后的显示效果为:  
+那么最后的显示效果为:    
 --abc  
 ----name:abc  
 ----data:1111  
@@ -50,11 +50,11 @@ option.node_title_key='name'
 
 * option.node_child_key
 
-如果输入如下配置:  
+如果输入如下配置:    
 option.node_title_key='name'  
 option.node_child_key='data'  
 
-那么最后的显示效果为:  
+那么最后的显示效果为:    
 --abc  
 ----1111  
 --aaa  
