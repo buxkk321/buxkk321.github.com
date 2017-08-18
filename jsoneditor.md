@@ -1,7 +1,9 @@
  
+## 配置项
+* node_title_key
+* node_child_key
 
-
-## 示例
+### 例1:
 
 输入数据:
 ```js
@@ -32,10 +34,10 @@ $('#xxx').JsonEditor(input_data);
 ------标题3:333  
 ------标题4:444  
 
-## 配置项
-* option.node_title_key
 
-* 例1:如果输入如下配置:   
+
+### 例2:
+更改配置:   
 option.node_title_key='name'
 
 那么最后的显示效果为:    
@@ -50,23 +52,54 @@ option.node_title_key='name'
 
 * option.node_child_key
 
-如果输入如下配置:    
+### 例3:
+更改配置:    
 option.node_child_key='data'  
 
 那么最后的显示效果为:     
---标题1   
-----1111    
+--标题1:1111    
 --标题2   
 ----标题3:333  
 ----标题4:444  
 
-如果输入如下配置:    
+### 例4:
+更改配置:      
 option.node_title_key='name'  
 option.node_child_key='data'  
 
-那么最后的显示效果为:    
---abc  
-----1111  
+显示效果为:    
+--abc:1111  
 --aaa  
 ----标题3:333  
 ----标题4:444  
+
+### 例5:
+输入数据:
+```js
+var input_data={
+  '标题1':{
+    name:'abc',
+    data:'1111'
+  },
+  '标题2':{
+    name:'aaa',
+    data:{
+      '标题3':'333',
+      '标题4':'444'
+      sublist:{
+        '标题5':'555',
+        '标题6':'666'
+      }
+    }
+  }
+};
+```
+更改配置:      
+option.node_title_key='name'  
+option.node_child_key='data.sublist'  
+
+显示效果为:    
+--abc:''  (空字符串)  
+--aaa  
+----标题5:555   
+----标题6:666   
