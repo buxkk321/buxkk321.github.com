@@ -37,6 +37,23 @@ $('#xxx').JsonEditor(input_data);
 
 
 ### 例2:
+```js
+var input_data={
+  '标题1':{
+    key1:'abc',
+    key2:'1111'
+  },
+  '标题2':{
+    key1:'aaa',
+    key2:{
+      '标题3':'333',
+      '标题4':'444'
+    }
+  }
+};
+
+$('#xxx').JsonEditor(input_data);
+```
 更改配置:   
 option.node_title_key='key1'
 
@@ -53,6 +70,23 @@ option.node_title_key='key1'
 * option.node_child_key
 
 ### 例2.2:
+```js
+var input_data={
+  '标题1':{
+    key1:'abc',
+    key2:'1111'
+  },
+  '标题2':{
+    key1:'aaa',
+    key2:{
+      '标题3':'333',
+      '标题4':'444'
+    }
+  }
+};
+
+$('#xxx').JsonEditor(input_data);
+```
 更改配置:   
 option.node_title_key='abc'
 
@@ -68,6 +102,23 @@ option.node_title_key='abc'
 
 
 ### 例3:
+```js
+var input_data={
+  '标题1':{
+    key1:'abc',
+    key2:'1111'
+  },
+  '标题2':{
+    key1:'aaa',
+    key2:{
+      '标题3':'333',
+      '标题4':'444'
+    }
+  }
+};
+
+$('#xxx').JsonEditor(input_data);
+```
 更改配置:    
 option.node_child_key='key2'  
 
@@ -78,6 +129,23 @@ option.node_child_key='key2'
 ----标题4:444  
 
 ### 例4:
+```js
+var input_data={
+  '标题1':{
+    key1:'abc',
+    key2:'1111'
+  },
+  '标题2':{
+    key1:'aaa',
+    key2:{
+      '标题3':'333',
+      '标题4':'444'
+    }
+  }
+};
+
+$('#xxx').JsonEditor(input_data);
+```
 更改配置:      
 option.node_title_key='key1'  
 option.node_child_key='key2'  
