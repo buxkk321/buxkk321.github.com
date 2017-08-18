@@ -9,12 +9,12 @@
 ```js
 var input_data={
   '标题1':{
-    name:'abc',
-    data:'1111'
+    key1:'abc',
+    key2:'1111'
   },
   '标题2':{
-    name:'aaa',
-    data:{
+    key1:'aaa',
+    key2:{
       '标题3':'333',
       '标题4':'444'
     }
