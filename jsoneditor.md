@@ -58,8 +58,8 @@ option.node_title_key='abc'
 
 那么最后的显示效果为:    
 --''(空字符串)   
-----name:abc   
-----data:1111   
+----name:abc        
+----data:1111        
 --''(空字符串)   
 ----name:aaa   
 ----data:  
