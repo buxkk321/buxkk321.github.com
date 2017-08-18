@@ -51,6 +51,16 @@ option.node_title_key='name'
 * option.node_child_key
 
 如果输入如下配置:    
+option.node_child_key='data'  
+
+那么最后的显示效果为:     
+--标题1   
+----1111    
+--标题2   
+----标题3:333  
+----标题4:444  
+
+如果输入如下配置:    
 option.node_title_key='name'  
 option.node_child_key='data'  
 
