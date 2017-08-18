@@ -57,10 +57,10 @@ option.node_title_key='name'
 option.node_title_key='abc'
 
 那么最后的显示效果为:    
---''(空字符串)  
+--''(空字符串)   
 ----name:abc  
 ----data:1111  
---''(空字符串)  
+--''(空字符串)   
 ----name:aaa  
 ----data:  
 ------标题3:333  
