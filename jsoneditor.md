@@ -26,11 +26,11 @@ $('#xxx').JsonEditor(input_data);
 
 默认显示效果    
 --标题1  
-----name:abc  
-----data:1111  
+----key1:abc  
+----key2:1111  
 --标题2  
-----name:aaa  
-----data  
+----key1:aaa  
+----key2  
 ------标题3:333  
 ------标题4:444  
 
@@ -38,15 +38,15 @@ $('#xxx').JsonEditor(input_data);
 
 ### 例2:
 更改配置:   
-option.node_title_key='name'
+option.node_title_key='key1'
 
 那么最后的显示效果为:    
 --abc  
-----name:abc  
-----data:1111  
+----key1:abc  
+----key2:1111  
 --aaa  
-----name:aaa  
-----data:  
+----key1:aaa  
+----key2:  
 ------标题3:333  
 ------标题4:444  
 
@@ -58,18 +58,18 @@ option.node_title_key='abc'
 
 那么最后的显示效果为:    
 --''(空字符串)   
-----name:abc        
-----data:1111        
+----key1:abc        
+----key2:1111        
 --''(空字符串)   
-----name:aaa   
-----data:  
+----key1:aaa   
+----key2:  
 ------标题3:333  
 ------标题4:444  
 
 
 ### 例3:
 更改配置:    
-option.node_child_key='data'  
+option.node_child_key='key2'  
 
 那么最后的显示效果为:     
 --标题1:1111    
@@ -79,8 +79,8 @@ option.node_child_key='data'
 
 ### 例4:
 更改配置:      
-option.node_title_key='name'  
-option.node_child_key='data'  
+option.node_title_key='key1'  
+option.node_child_key='key2'  
 
 显示效果为:    
 --abc:1111  
@@ -93,15 +93,15 @@ option.node_child_key='data'
 ```js
 var input_data={
   '标题1':{
-    name:'abc',
-    data:'1111'
+    key1:'abc',
+    key2:'1111'
   },
   '标题2':{
-    name:'aaa',
-    data:{
+    key1:'aaa',
+    key2:{
       '标题3':'333',
       '标题4':'444'
-      sublist:{
+      key3:{
         '标题5':'555',
         '标题6':'666'
       }
@@ -110,8 +110,8 @@ var input_data={
 };
 ```
 更改配置:      
-option.node_title_key='name'  
-option.node_child_key='data.sublist'  
+option.node_title_key='key1'  
+option.node_child_key='key2.key3'  
 
 显示效果为:    
 --abc:''  (空字符串)  
